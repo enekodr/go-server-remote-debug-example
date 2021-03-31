@@ -10,7 +10,7 @@ This project contains the minimum code and files for remote debugging a Go serve
 
 - Install [Docker](https://www.docker.com/products/docker-desktop)
 - Install [Visual Studio Code](https://code.visualstudio.com/download)
-- Clone this repository `git clone git@github.com/enekodr/go-server-remote-debug-example`
+- Clone this repository `git clone git@github.com:enekodr/go-server-remote-debug-example.git`
 
 ## Debug the server in the container
 
