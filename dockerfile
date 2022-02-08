@@ -1,4 +1,4 @@
-FROM golang:1.16.10
+FROM golang:1.16.13
 RUN go get github.com/go-delve/delve/cmd/dlv
 WORKDIR /go/src/app
 ADD main.go .
