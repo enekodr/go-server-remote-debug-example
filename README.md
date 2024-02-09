@@ -1,10 +1,10 @@
 # Go server debugging example
 
-Sometimes we need to see what's going on a Docker container. There are plenty examples of this for NodeJS, but not that much for Go. Here is the minimum code to get it done.
+Example of how to debug a Docker container directly from Visual Studio Code.
 
 ## Description
 
-This project contains the minimum code and files for remote debugging a Go server running in a Docker container with Visual Studio Code.
+This project contains the minimum code and files for remote debugging a Go server running in a Docker container with Visual Studio Code. There are plenty examples of this for NodeJS, but not that much for Go. Here is the minimum code to get it done.
 
 ## Get started
 
@@ -14,16 +14,14 @@ This project contains the minimum code and files for remote debugging a Go serve
 
 ## Debug the server in the container
 
-First of all, **start docker daemon** launching the Docker Desktop app.
-
-Then, open Visual Studio Code, open a terminal and launch the container with `docker-compose up --build`.
-
-Finally, go to Run and Debug tab and tap the play button to attach the Visual Studio Code debugger to the running container
+1. Start Docker daemon launching the Docker Desktop app.
+2. Open Visual Studio Code, open a terminal and launch the container with `docker-compose up --build`.
+3. Go to Run and Debug tab and tap the play button to attach the Visual Studio Code debugger to the running container.
 
 ![Example image](https://user-images.githubusercontent.com/25287536/113139757-d3386380-9227-11eb-913e-3a6d0d7d85e1.png)
 
 ## Test if it's working
 
-Set a breakpoint anywhere in the `main.go` file and open the broswer with [this url](http://localhost:8090) or send a request with [Postman](https://www.postman.com)
+Set a breakpoint inside `successMessage` method, on the `main.go` file, and open the broswer with [this url](http://localhost:8090) or send a request with [Postman](https://www.postman.com).
 
 You should be ready to Go :)

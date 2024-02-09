@@ -1,5 +1,6 @@
-FROM golang:1.18.9
-RUN go get github.com/go-delve/delve/cmd/dlv
+FROM golang:1.20.13
+RUN go install github.com/go-delve/delve/cmd/dlv@latest
 WORKDIR /go/src/app
+RUN go mod init
 ADD main.go .
 CMD [ "dlv", "debug", "/go/src/app", "--listen=:2345", "--headless=true", "--api-version=2", "--log" ]
