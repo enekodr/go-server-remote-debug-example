@@ -5,11 +5,11 @@ import (
 	"net/http"
 )
 
-func hello(w http.ResponseWriter, req *http.Request) {
+func successMessage(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, "Successfully connected\n")
 }
 
 func main() {
-	http.HandleFunc("/", hello)
+	http.HandleFunc("/", successMessage)
 	http.ListenAndServe(":8090", nil)
 }
