@@ -1,4 +1,4 @@
-FROM golang:1.20.13
+FROM golang:1.21.8
 RUN go install github.com/go-delve/delve/cmd/dlv@latest
 WORKDIR /go/src/app
 RUN go mod init
